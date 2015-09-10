@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Dda
+        psr4_prefix: Dda
+        src_path: app
