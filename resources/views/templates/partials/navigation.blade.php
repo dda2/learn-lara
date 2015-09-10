@@ -23,7 +23,7 @@
                 <li><a href="">Perbarui Profil</a></li>
                 <li><a href="">Keluar</a></li>
                 <!-- @else -->
-                <li><a href="">Daftar</a></li>
+                <li><a href="{{ route('signup') }}">Daftar</a></li>
                 <li><a href="">Masuk</a></li>
                 <!-- @endif -->
             </ul>
