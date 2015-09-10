@@ -1,6 +1,6 @@
 <?php
 
-namespace Dda\Providers;
+namespace Mitschool\Providers;
 
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'Dda\Model' => 'Dda\Policies\ModelPolicy',
+        'Mitschool\Model' => 'Mitschool\Policies\ModelPolicy',
     ];
 
     /**

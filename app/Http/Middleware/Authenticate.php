@@ -1,6 +1,6 @@
 <?php
 
-namespace Dda\Http\Middleware;
+namespace Mitschool\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

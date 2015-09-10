@@ -1,6 +1,6 @@
 <?php
 
-namespace Dda\Http;
+namespace Mitschool\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -13,11 +13,11 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
-        \Dda\Http\Middleware\EncryptCookies::class,
+        \Mitschool\Http\Middleware\EncryptCookies::class,
         \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-        \Dda\Http\Middleware\VerifyCsrfToken::class,
+        \Mitschool\Http\Middleware\VerifyCsrfToken::class,
     ];
 
     /**
@@ -26,8 +26,8 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \Dda\Http\Middleware\Authenticate::class,
+        'auth' => \Mitschool\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'guest' => \Dda\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \Mitschool\Http\Middleware\RedirectIfAuthenticated::class,
     ];
 }

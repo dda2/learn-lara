@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model'  => Dda\User::class,
+        'model'  => Mitschool\User::class,
         'key'    => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

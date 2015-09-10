@@ -140,10 +140,10 @@ return [
         /*
          * Application Service Providers...
          */
-        Dda\Providers\AppServiceProvider::class,
-        Dda\Providers\AuthServiceProvider::class,
-        Dda\Providers\EventServiceProvider::class,
-        Dda\Providers\RouteServiceProvider::class,
+        Mitschool\Providers\AppServiceProvider::class,
+        Mitschool\Providers\AuthServiceProvider::class,
+        Mitschool\Providers\EventServiceProvider::class,
+        Mitschool\Providers\RouteServiceProvider::class,
 
     ],
 

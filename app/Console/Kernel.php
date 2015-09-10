@@ -1,6 +1,6 @@
 <?php
 
-namespace Dda\Console;
+namespace Mitschool\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        \Dda\Console\Commands\Inspire::class,
+        \Mitschool\Console\Commands\Inspire::class,
     ];
 
     /**

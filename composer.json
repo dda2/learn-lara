@@ -19,7 +19,7 @@
             "database"
         ],
         "psr-4": {
-            "Dda\\": "app/"
+            "Mitschool\\": "app/"
         }
     },
     "autoload-dev": {

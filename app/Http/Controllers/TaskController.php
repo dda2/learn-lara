@@ -1,8 +1,8 @@
 <?php
 
-namespace Dda\Http\Controllers;
+namespace Mitschool\Http\Controllers;
 
-use Dda\Models\Task;
+use Mitschool\Models\Task;
 use Illuminate\Http\Request;
 
 class TaskController extends Controller

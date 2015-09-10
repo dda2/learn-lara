@@ -1,6 +1,6 @@
 <?php
 
-namespace Dda\Providers;
+namespace Mitschool\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dda\Jobs;
+namespace Mitschool\Jobs;
 
 use Illuminate\Bus\Queueable;
 

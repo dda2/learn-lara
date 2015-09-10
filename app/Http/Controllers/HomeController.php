@@ -1,6 +1,6 @@
 <?php
 
-namespace Dda\Http\Controllers;
+namespace Mitschool\Http\Controllers;
 
 class HomeController extends Controller
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dda\Models;
+namespace Mitschool\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

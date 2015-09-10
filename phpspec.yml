@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: Dda
-        psr4_prefix: Dda
+        namespace: Mitschool
+        psr4_prefix: Mitschool
         src_path: app

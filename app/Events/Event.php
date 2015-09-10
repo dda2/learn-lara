@@ -1,6 +1,6 @@
 <?php
 
-namespace Dda\Events;
+namespace Mitschool\Events;
 
 abstract class Event
 {

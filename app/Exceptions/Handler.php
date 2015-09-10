@@ -1,6 +1,6 @@
 <?php
 
-namespace Dda\Exceptions;
+namespace Mitschool\Exceptions;
 
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;

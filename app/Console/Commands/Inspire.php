@@ -1,6 +1,6 @@
 <?php
 
-namespace Dda\Console\Commands;
+namespace Mitschool\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

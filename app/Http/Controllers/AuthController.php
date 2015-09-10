@@ -1,8 +1,8 @@
 <?php
 
-namespace Dda\Http\Controllers;
+namespace Mitschool\Http\Controllers;
 
-use Dda\Models\User;
+use Mitschool\Models\User;
 use Illuminate\Http\Request;
 
 class AuthController extends Controller

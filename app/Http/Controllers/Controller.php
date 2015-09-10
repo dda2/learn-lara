@@ -1,6 +1,6 @@
 <?php
 
-namespace Dda\Http\Controllers;
+namespace Mitschool\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dda\Http\Requests;
+namespace Mitschool\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

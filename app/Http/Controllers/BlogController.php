@@ -1,8 +1,8 @@
 <?php
 
-namespace Dda\Http\Controllers;
+namespace Mitschool\Http\Controllers;
 
-use Dda\Models\Blog;
+use Mitschool\Models\Blog;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
