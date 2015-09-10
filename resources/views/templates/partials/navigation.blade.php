@@ -1,7 +1,7 @@
 <div class="navbar navbar-default" role="navbar">
     <div class="container">
         <div class="navbar-header">
-            <a href="" class="navbar-brand">DDA</a>
+            <a href="{{ route('home') }}" class="navbar-brand">DDA</a>
         </div>
         <div class="collapse navbar-collapse">
             <!-- @if (Auth::check()) -->
