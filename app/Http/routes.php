@@ -38,7 +38,25 @@ Route::post('/tugas/tambah', [
     'as'    => 'tambah.tugas.post',
 ]);
 
+Route::get('/tugas/edit/{id}', [
+    'uses'  => '\Mitschool\Http\Controllers\TaskController@getEdit',
+    'as'    => 'edit.tugas',
+]);
 
+Route::patch('/tugas/edit/{id}', [
+    'uses'  => '\Mitschool\Http\Controllers\TaskController@actEdit',
+    'as'    => 'edit.tugas.post',
+]);
+
+Route::get('/tugas/delete/{id}', [
+    'uses'  => '\Mitschool\Http\Controllers\TaskController@getDelete',
+    'as'    => 'hapus.tugas',
+]);
+
+Route::delete('/tugas/delete/{id}', [
+    'uses'  => '\Mitschool\Http\Controllers\TaskController@actDelete',
+    'as'    => 'hapus.tugas.post',
+]);
 /**
  * Blog
  */

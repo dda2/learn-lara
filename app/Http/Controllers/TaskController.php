@@ -38,11 +38,44 @@ class TaskController extends Controller
 
     public function getEdit($id)
     {
+        $task = Task::findOrFail($id);
 
+        return view('task.edit')->with('task', $task);
     }
 
-    public function postEdit($id)
+    public function actEdit($id, Request $request)
     {
+        $task = Task::findOrFail($id);
 
+        $this->validate($request, [
+            'task_title'    => 'required',
+            'task_detail'   => 'required|min:10',
+        ]);
+
+        $input = $request->all();
+
+        $task->fill($input)->save();
+
+        return redirect()
+            ->route('tugas')
+            ->with('info', 'Tugas berhasil di edit');
+    }
+
+    public function getDelete($id)
+    {
+        $task = Task::findOrFail($id);
+
+        return view('task.delete')->with('task', $task);
+    }
+
+    public function actDelete($id)
+    {
+        $task = Task::findOrFail($id);
+
+        $task->delete();
+
+        return redirect()
+            ->route('tugas')
+            ->with('info', 'Tugas berhasil dihapus');
     }
 }

@@ -3,9 +3,8 @@
 @section('content')
     <div class="row">
         <h3>Blog</h3>
-
         <a href="{{ route('tambah.blog') }}" class="btn btn-primary">Tambah Blog</a>
-
+        <hr>
         <table class="table table-bordered">
             <tr>
                 <th>Id</th>
