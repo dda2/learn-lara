@@ -74,3 +74,23 @@ Route::post('/blog/add', [
     'uses'  => '\Mitschool\Http\Controllers\BlogController@postAdd',
     'as'    => 'tambah.blog.post',
 ]);
+
+Route::get('/blog/edit/{id}', [
+    'uses'  => '\Mitschool\Http\Controllers\BlogController@getEdit',
+    'as'    => 'edit.blog',
+]);
+
+Route::patch('/blog/edit/{id}', [
+    'uses'  => '\Mitschool\Http\Controllers\BlogController@actEdit',
+    'as'    => 'edit.blog.patch',
+]);
+
+Route::get('/blog/hapus/{id}', [
+    'uses'  => '\Mitschool\Http\Controllers\BlogController@getDelete',
+    'as'    => 'hapus.blog',
+]);
+
+Route::delete('/blog/hapus/{id}', [
+    'uses'  => '\Mitschool\Http\Controllers\BlogController@actDelete',
+    'as'    => 'hapus.blog.delete',
+]);

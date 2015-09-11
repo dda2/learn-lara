@@ -2,9 +2,10 @@
 
 namespace Mitschool\Models;
 
-use Illuminate\Database\Eloquent\Model;
+// use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Query\Builder;
 
-class Blog extends Model
+class Blog extends Builder
 {
     protected $table = 'blogs';
 
@@ -13,4 +14,11 @@ class Blog extends Model
         'content',
         'author',
     ];
+
+    public function getBlog()
+    {
+        $users = DB::table('users')->get();
+
+        return $users;
+    }
 }
