@@ -14,12 +14,28 @@ Route::get('/', [
 Route::get('/daftar', [
     'uses'  => '\Mitschool\Http\Controllers\AuthController@getSignup',
     'as'    => 'signup',
+    'middleware' => ['guest']
 ]);
 
 Route::post('/daftar', [
     'uses'  => '\Mitschool\Http\Controllers\AuthController@postSignup',
 ]);
 
+Route::get('/masuk', [
+    'uses'  => '\Mitschool\Http\Controllers\AuthController@getSignin',
+    'as'    => 'signin',
+    'middleware' => ['guest']
+]);
+
+Route::post('/masuk', [
+    'uses'  => '\Mitschool\Http\Controllers\AuthController@postSignin',
+    'as'    => 'signin.post'
+]);
+
+Route::get('/keluar', [
+    'uses'  => '\Mitschool\Http\Controllers\AuthController@getSignout',
+    'as'    => 'signout',
+]);
 /**
  * Task
  */

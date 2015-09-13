@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'model' => Mitschool\User::class,
+    'model' => Mitschool\Models\User::class,
 
     /*
     |--------------------------------------------------------------------------
