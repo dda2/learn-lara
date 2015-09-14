@@ -110,3 +110,30 @@ Route::delete('/blog/hapus/{id}', [
     'uses'  => '\Mitschool\Http\Controllers\BlogController@actDelete',
     'as'    => 'hapus.blog.delete',
 ]);
+
+/**
+ * Gambar
+ */
+Route::get('/gambar', [
+    'uses'  => '\Mitschool\Http\Controllers\UploadController@getIndex',
+    'as'    => 'upload.gambar',
+]);
+
+Route::post('/gambar', [
+    'uses'  => '\Mitschool\Http\Controllers\UploadController@postImage',
+    'as'    => 'upload.gambar.post',
+]);
+
+/**
+ * Profil
+ */
+
+Route::get('/profil', [
+    'uses'  => '\Mitschool\Http\Controllers\ProfilController@getProfil',
+    'as'    => 'profil.image',
+]);
+
+Route::post('/profil', [
+    'uses'  => '\Mitschool\Http\Controllers\ProfilController@postAddImage',
+    'as'    => 'profil.image.post',
+]);
